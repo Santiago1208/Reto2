@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include android:id="@+id/view_playlist_toolbar"
+        layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:id="@+id/view_playlist_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/playlist_image"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginBottom="10dp"
+            android:scaleType="centerInside"/>
+
+        <TextView
+            android:id="@+id/playlist_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="List title"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/playlist_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Playlist description"
+            android:textSize="14sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginVertical="25dp">
+
+            <TextView
+                android:id="@+id/playlist_tracks_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="# tracks"
+                android:textSize="14sp"
+                android:layout_marginRight="15sp"/>
+
+            <TextView
+                android:id="@+id/playlist_fans_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="# fans"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/tracks_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <ProgressBar
+                android:id="@+id/searching_tracks_progress"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:indeterminate="true"
+                android:layout_centerInParent="true"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:id="@+id/content-layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="10dp"
+            android:paddingHorizontal="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/keywords_text"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:hint="@string/keywords_hint"
+                android:background="@drawable/rounded_rectangle"
+                android:paddingHorizontal="20dp"
+
+                android:layout_alignParentLeft="true"
+                android:layout_weight="5"/>
+
+            <ImageButton
+                android:id="@+id/search_img_button"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/search"
+                android:tint="@color/colorPrimaryDark"
+                android:background="@color/colorPrimary"
+                android:scaleType="fitCenter"
+                android:layout_margin="5dp"
+                android:padding="7dp"
+                android:elevation="8dp"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/playlist_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <ProgressBar
+                android:id="@+id/fetching_playlist_progress"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:indeterminate="true"
+                android:layout_centerInParent="true"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

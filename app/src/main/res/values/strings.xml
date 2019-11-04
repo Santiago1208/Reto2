@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Reto Deezer</string>
+    <string name="keywords_hint">Find a playlist</string>
+    <string name="activity1_title">Find Playlist</string>
+    <string name="activity2_title">View Playlist</string>
+    <string name="activity3_title">View Song</string>
+    <string name="listen_button_text">Listen</string>
+
+    <string name="search_keywords_empty">Write some keywords to search playlists, please</string>
+
+    <string name="tracks_label_plural">tracks</string>
+    <string name="tracks_label_singular">track</string>
+
+    <string name="fans_label_plural">fans</string>
+    <string name="fans_label_singular">fan</string>
+
+
+</resources>
